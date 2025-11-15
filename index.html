@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Musicala · Afinación de Cello a Oído</title>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="mx-header">
+    <div class="mx-header__brand">
+      <img src="logo.png" alt="Logo Musicala" class="mx-logo" />
+      <div class="mx-brandtext">
+        <h1>Afinación de Cello · Musicala</h1>
+        <p class="mx-kicker">Guía interactiva (solo texto) para estudiantes 🎻</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-wrap">
+
+    <!-- INTRO -->
+    <section class="mx-card">
+      <span class="mx-pill">Bienvenida</span>
+      <p class="mx-lead">
+        Afinar tu cello es parte de tocarlo bien. Esta página está pensada para que,
+        como estudiante de <strong>Musicala</strong>, entiendas <strong>qué estás
+        haciendo</strong> cuando afinas: qué cuerdas tienes, qué notas buscas, cómo
+        usar el oído y cómo leer mejor un afinador o una app.
+      </p>
+      <p class="mx-hint">
+        No necesitas hacer todo perfecto: la idea es que cada vez escuches un poquito mejor.
+        Puedes volver a esta página siempre que quieras antes de estudiar.
+      </p>
+    </section>
+
+    <!-- 1. CUERDAS DEL CELLO -->
+    <section class="mx-card">
+      <span class="mx-pill">1 · Cuerdas del cello</span>
+      <h2 class="mx-h2">Las notas al aire del cello 🎻</h2>
+
+      <div class="mx-grid">
+        <div class="mx-col">
+          <p class="mx-lead">
+            El cello tiene <strong>4 cuerdas al aire</strong>, de la más grave a la más aguda:
+            <strong>C–G–D–A</strong> (Do–Sol–Re–La).
+          </p>
+
+          <table class="mx-table" aria-label="Cuerdas del cello y sus notas">
+            <thead>
+              <tr>
+                <th>Cuerda</th>
+                <th>Nota</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr title="Cuerda más grave del cello.">
+                <td>Cuerda 4</td>
+                <td><strong>C (Do)</strong></td>
+                <td>Cuerda más grave, base del registro bajo.</td>
+              </tr>
+              <tr title="Zona grave-media del instrumento.">
+                <td>Cuerda 3</td>
+                <td><strong>G (Sol)</strong></td>
+                <td>Conecta el registro grave con el medio.</td>
+              </tr>
+              <tr title="Muy usada para melodías.">
+                <td>Cuerda 2</td>
+                <td><strong>D (Re)</strong></td>
+                <td>Zona media del cello, muy presente en piezas y estudios.</td>
+              </tr>
+              <tr title="Cuerda más brillante del cello.">
+                <td>Cuerda 1</td>
+                <td><strong>A (La)</strong></td>
+                <td>Cuerda más aguda; suele ser la referencia principal para afinar.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mx-col">
+          <h3 class="mx-h3">¿Qué es una “nota al aire”?</h3>
+          <ul class="mx-list mx-list--compact">
+            <li>Es la nota que suena cuando tocas la cuerda <strong>sin pisar ningún dedo</strong>.</li>
+            <li>Es el “punto de partida” de cada cuerda para todo lo que tocas encima.</li>
+            <li>Si las cuerdas al aire están desafinadas, todo lo que toques sonará raro aunque pongas bien los dedos.</li>
+          </ul>
+
+          <details class="mx-details">
+            <summary class="mx-hint"><strong>💡 Truco de memoria:</strong> clic para ver</summary>
+            <p class="mx-hint">
+              Piensa en las iniciales: <strong>C – G – D – A</strong>.  
+              Puedes inventar una frase tipo: <em>“Conciertos Geniales De Alek”</em> o
+              <em>“Casa Grande De Arte”</em>. Lo importante es que tú te la aprendas.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. REFERENCIA DE AFINACIÓN -->
+    <section class="mx-card">
+      <span class="mx-pill">2 · Referencia de afinación</span>
+      <h2 class="mx-h2">¿Qué es eso de A4 = 440 Hz? 🎼</h2>
+
+      <div class="mx-grid--modes">
+        <div class="mx-col">
+          <h3 class="mx-h3">La nota de referencia</h3>
+          <p>
+            En música, se suele usar como referencia un <strong>La</strong> (A4) que vibra
+            a <strong>440 Hz</strong>. Eso significa que el sonido oscila 440 veces por segundo.
+          </p>
+          <p>
+            Muchas orquestas usan 440 Hz, otras 442 Hz, y en música antigua a veces se usa 415 Hz.
+            En la mayoría de tus clases, trabajarás con <strong>440 Hz</strong> o
+            <strong>442 Hz</strong>, según lo acuerdes con tu profe.
+          </p>
+        </div>
+
+        <div class="mx-col">
+          <h3 class="mx-h3">De dónde saco ese La de referencia</h3>
+          <ul class="mx-list mx-list--compact">
+            <li>Un <strong>afinador digital</strong> (de pinza o de piso).</li>
+            <li>Una <strong>app de afinación</strong> en el celular.</li>
+            <li>Un <strong>diapasón</strong> (ese palito metálico que suena A = 440 Hz).</li>
+            <li>Un <strong>piano bien afinado</strong>.</li>
+          </ul>
+          <p class="mx-hint">
+            Lo importante es usar <strong>siempre la misma referencia</strong> en una sesión,
+            para que tú y los demás instrumentos estén en el mismo “universo de afinación”.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PASOS PARA AFINAR -->
+    <section class="mx-card">
+      <span class="mx-pill">3 · Paso a paso</span>
+      <h2 class="mx-h2">Cómo afinar tu cello (versión estudiante) 🧭</h2>
+
+      <ol class="mx-list">
+        <li>
+          <strong>Afina primero la cuerda A (La).</strong><br>
+          Usa tu afinador/app o un La de referencia. Ajusta la clavija o el microafinador
+          hasta que la app te muestre A y la aguja esté cerca del centro (o que
+          el La que escuchas y tu cuerda se parezcan bastante).
+        </li>
+
+        <li>
+          <strong>Ajusta la cuerda D (Re) usando la cuerda A.</strong><br>
+          Toca A y D al tiempo. El intervalo entre A y D debe ser una
+          <strong>quinta justa</strong>. Si escuchas un “temblor” en el sonido
+          (como si el volumen subiera y bajara), todavía no está bien centrado.
+        </li>
+
+        <li>
+          <strong>Ajusta la cuerda G (Sol) usando D.</strong><br>
+          Toca D y G juntas. Escucha si la combinación suena estable o si
+          “late” rápido. Cuanto más rápido late, más desafinadas están.
+        </li>
+
+        <li>
+          <strong>Ajusta la cuerda C (Do) usando G.</strong><br>
+          Toca C y G al tiempo. Busca que la quinta suene suave, sin muchas pulsaciones.
+        </li>
+
+        <li>
+          <strong>Vuelve al inicio y revisa todo.</strong><br>
+          Cada vez que mueves una cuerda, las otras cambian un poquito.
+          Da <strong>2 o 3 vueltas</strong> revisando A–D, D–G, G–C hasta
+          que todo se sienta más estable.
+        </li>
+      </ol>
+
+      <details class="mx-details">
+        <summary class="mx-hint"><strong>💡 Tip extra:</strong> ¿cada cuánto debería afinar?</summary>
+        <p class="mx-hint">
+          Lo ideal es afinar <strong>siempre que vayas a estudiar</strong>.
+          Incluso si solo es una práctica corta, empezar afinando te entrena
+          a escuchar mejor tu instrumento.
+        </p>
+      </details>
+    </section>
+
+    <!-- 4. QUINTAS Y PULSACIONES -->
+    <section class="mx-card">
+      <span class="mx-pill">4 · Oído fino</span>
+      <h2 class="mx-h2">Quintas y “pulsaciones” del sonido 🔄</h2>
+
+      <div class="mx-grid">
+        <div class="mx-col">
+          <h3 class="mx-h3">Quintas entre cuerdas</h3>
+          <ul class="mx-list mx-list--compact">
+            <li>Entre <strong>C y G</strong> hay una quinta.</li>
+            <li>Entre <strong>G y D</strong> hay quinta.</li>
+            <li>Entre <strong>D y A</strong> hay quinta.</li>
+          </ul>
+          <p>
+            Cuando las dos cuerdas están bien afinadas entre sí, la quinta suena
+            <strong>clara, estable y “relajada”</strong>, sin sensación de pelea
+            entre los sonidos.
+          </p>
+        </div>
+
+        <div class="mx-col">
+          <h3 class="mx-h3">¿Qué son las pulsaciones?</h3>
+          <ul class="mx-list mx-list--compact">
+            <li>
+              Si las cuerdas no están afinadas, escuchas un movimiento en el sonido:
+              como un <em>“uuuu-uuuu”</em> que sube y baja.
+            </li>
+            <li>Esas son las <strong>pulsaciones</strong> o “beats”.</li>
+            <li>Cuanto más rápido late, <strong>más desafinadas</strong> están.</li>
+            <li>
+              Cuando ajustas y las pulsaciones se hacen más lentas y luego casi
+              desaparecen, te estás acercando a la afinación correcta.
+            </li>
+          </ul>
+          <p class="mx-hint">
+            Entrenar tu oído es, en parte, aprender a escuchar esas pulsaciones
+            y a dejarlas lo más quietas posible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CÓMO LEER UN AFINADOR -->
+    <section class="mx-card">
+      <span class="mx-pill">5 · Afinador / App</span>
+      <h2 class="mx-h2">Cómo entender un afinador o una app 📱</h2>
+
+      <div class="mx-grid">
+        <div class="mx-col">
+          <h3 class="mx-h3">Lo que sueles ver en pantalla</h3>
+          <ul class="mx-list mx-list--compact">
+            <li><strong>Nombre de la nota:</strong> C, D, E, F, G, A, B (Do, Re, Mi...).</li>
+            <li><strong>Octava:</strong> un número al lado de la nota (A3, D3…).</li>
+            <li><strong>Aguja o barra:</strong> se mueve a la izquierda o derecha.</li>
+            <li><strong>Cents (¢):</strong> número que indica cuán lejos estás de la afinación perfecta.</li>
+          </ul>
+        </div>
+
+        <div class="mx-col">
+          <h3 class="mx-h3">Cómo usarlo mejor</h3>
+          <ul class="mx-list mx-list--compact">
+            <li>Asegúrate de que la nota que aparece sea C, G, D o A según la cuerda.</li>
+            <li>Si la aguja va a la izquierda o el número es negativo, la nota está <strong>grave</strong> (baja).</li>
+            <li>Si va a la derecha o el número es positivo, está <strong>aguda</strong> (alta).</li>
+            <li>
+              Para estudiar está bien aproximarse a ±5 cents; tu oído se irá volviendo
+              más exigente con el tiempo.
+            </li>
+          </ul>
+          <p class="mx-hint">
+            El afinador te ayuda a “ver” la afinación. La meta es que siempre te apoyes
+            más en lo que escuchas que en lo que ves en la pantalla.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONSEJOS FINALES -->
+    <section class="mx-card">
+      <span class="mx-pill">6 · Consejos finales</span>
+      <h2 class="mx-h2">Ideas para practicar tu afinación 🎧</h2>
+
+      <ul class="mx-list">
+        <li>
+          <strong>Empieza cada práctica afinando.</strong><br>
+          Aunque sea una sesión corta, afinar al inicio cambia la forma en que
+          escuchas todo lo que tocas.
+        </li>
+        <li>
+          <strong>Cuida las clavijas.</strong><br>
+          No las fuerces. Haz movimientos pequeños y controlados. Si algo se siente
+          muy duro o raro, pide ayuda.
+        </li>
+        <li>
+          <strong>Practica con alguien.</strong><br>
+          Afinar con tu profe o con otro estudiante te ayuda a comparar y a compartir
+          la escucha.
+        </li>
+        <li>
+          <strong>Grábate.</strong><br>
+          Toca las cuatro cuerdas al aire después de afinar y escucha la grabación
+          con audífonos. Notarás detalles que en el momento se escapan.
+        </li>
+        <li>
+          <strong>Ten paciencia con tu proceso.</strong><br>
+          Aprender a afinar bien toma meses y años, no días. Hace parte de crecer
+          como músico, no es un “extra”.
+        </li>
+      </ul>
+
+      <p class="mx-lead" style="margin-top:10px;">
+        Afinar es una manera de decirle a tu cello: “quiero que suenes bonito”.
+        Cada vez que afinas con atención, estás entrenando tu oído y tu sensibilidad. 🎻✨
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mx-footer">
+    <p class="mx-muted">
+      Hecho con cariño por Musicala · Guía explicativa de afinación de cello.
+    </p>
+    <div class="mx-muted">
+      Estándar habitual: <span class="mx-mono">A4 = 440 Hz</span>
+    </div>
+  </footer>
+</body>
+</html>

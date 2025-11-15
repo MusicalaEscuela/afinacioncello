@@ -1,0 +1,255 @@
+/* ------------------------------
+   VARIABLES DE COLOR MUSICALA
+------------------------------ */
+:root {
+  /* Paleta Musicala - tonos suaves y pro */
+  --mx-bg: #F8F9FE;
+  --mx-surface: #FFFFFF;
+  --mx-surface-2: #F2F4FB;
+
+  --mx-text: #1A1D2E;
+  --mx-muted: #6B6F8C;
+
+  --mx-blue: #0C41C4;      /* Azul Mozart */
+  --mx-purple: #680DBF;    /* Violeta Beethoven */
+  --mx-magenta: #CE0071;   /* Magenta Brahms */
+  --mx-aqua: #79EFC3;      /* Acento suave */
+
+  --mx-border: rgba(10, 20, 38, 0.12);
+  --mx-border-2: rgba(10, 20, 38, 0.07);
+
+  --mx-radius: 18px;
+  --mx-shadow: 0 10px 28px rgba(10, 20, 38, 0.12);
+}
+
+/* Reset */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; }
+
+/* ------------------------------
+   FONDO GENERAL
+------------------------------ */
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--mx-text);
+  background:
+    radial-gradient(1200px 700px at -10% -10%, rgba(12, 65, 196, .18), transparent 60%),
+    radial-gradient(1000px 600px at 100% 0%, rgba(104, 13, 191, .18), transparent 60%),
+    var(--mx-bg);
+  overflow-x: hidden;
+}
+
+/* Animación global suave */
+body, .mx-card {
+  transition: background .3s ease, box-shadow .3s ease;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+.mx-header {
+  background: linear-gradient(90deg, var(--mx-blue), var(--mx-purple), var(--mx-magenta));
+  padding: 14px 0;
+  color: white;
+  box-shadow: 0 4px 14px rgba(0,0,0,.15);
+}
+
+.mx-header__brand {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mx-logo {
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 14px;
+  padding: 8px;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0,0,0,.18);
+}
+
+.mx-brandtext h1 {
+  margin: 0;
+  font-size: clamp(22px, 4vw, 34px);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* ------------------------------
+   CONTENIDO GENERAL
+------------------------------ */
+.mx-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 80px;
+}
+
+/* ------------------------------
+   TARJETAS / CARDS
+------------------------------ */
+.mx-card {
+  background: var(--mx-surface);
+  border: 1px solid var(--mx-border);
+  padding: 22px;
+  border-radius: var(--mx-radius);
+  margin-bottom: 20px;
+  box-shadow: var(--mx-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Detalle suave en hover */
+.mx-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(10,20,38,.15);
+}
+
+/* Líneas decorativas musicales */
+.mx-card::before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 40px;
+  top: -18px;
+  left: -20%;
+  background: linear-gradient(90deg, var(--mx-blue), var(--mx-purple), transparent);
+  opacity: 0.12;
+  transform: rotate(-2deg);
+}
+
+/* ------------------------------
+   TIPOGRAFÍA
+------------------------------ */
+.mx-lead {
+  font-size: 1.05rem;
+  line-height: 1.58;
+  margin-bottom: 14px;
+  color: var(--mx-text);
+}
+
+.mx-h2 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.mx-h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mx-muted {
+  color: var(--mx-muted);
+}
+
+/* Divisor */
+.mx-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(10,20,38,.2), transparent);
+  margin: 14px 0;
+}
+
+/* ------------------------------
+   LISTAS
+------------------------------ */
+.mx-list {
+  padding-left: 20px;
+  line-height: 1.58;
+}
+
+.mx-list li {
+  margin: 8px 0;
+  position: relative;
+}
+
+/* Puntito animado Musicala */
+.mx-list li::marker {
+  color: var(--mx-purple);
+}
+
+/* ------------------------------
+   TABLAS
+------------------------------ */
+.mx-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.mx-table th {
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3F4A78;
+  padding: 10px 6px;
+  border-bottom: 2px solid var(--mx-border-2);
+}
+
+.mx-table td {
+  padding: 10px 6px;
+  border-bottom: 1px dashed var(--mx-border-2);
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   GRID
+------------------------------ */
+.mx-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
+}
+
+.mx-grid--modes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 20px;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+.mx-footer {
+  max-width: 1100px;
+  margin: 40px auto 24px;
+  padding: 0 24px;
+  color: var(--mx-muted);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------
+   ANIMACIONES SUAVES
+------------------------------ */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mx-card,
+.mx-h2,
+.mx-h3,
+.mx-table {
+  animation: fade-in .6s ease forwards;
+}
+
+/* ------------------------------
+   ACCESIBILIDAD
+------------------------------ */
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
